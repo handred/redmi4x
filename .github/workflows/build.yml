@@ -18,7 +18,7 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
-git 
+
     env:
       DEVICE: santoni
       ANDROID_ROOT: /home/runner/work/halium/
