@@ -27,6 +27,9 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
     
+    - name: AddDeb
+      run : echo $'deb http://us.archive.ubuntu.com/ubuntu/ xenial main universe\ndeb-src http://us.archive.ubuntu.com/ubuntu/ xenial main universe' | cat >> /etc/apt/sources.list
+    
     - name: Initialization environment
       run: |
         sudo apt-get update
